@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+             display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-name: saugat;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; */
+            animation: saugat 3s ease-in-out 1s infinite alternate-reverse ;
+        }
+        @keyframes saugat {
+            from{
+                width: 300px;
+            }
+            to{
+                width: 600px;
+                background-color: blue;
+                color: blue;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+          <div class="box">this is lorem</div>
+    </div>
+</body>
+</html>

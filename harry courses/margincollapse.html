@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collapse</title>
+    <style>
+        .box {
+            background-color: red;
+            margin: 30px;
+            height: 3340px;
+            width: 233px; 
+            border: 2px solid yellow;
+        }
+
+        .box1 {
+            background-color: aqua;
+            margin: 20px;
+            height: 20px;
+            padding: 6opx;
+            width: 100%;
+            border: 3px solid red;
+            box-sizing: border-box
+
+        }
+
+        /* if box margin is already 30px then it will not be added 20px margin to box1. it will compramise in upper margin */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, corporis, consectetur minus sequi fuga soluta
+        delectus dignissimos, accusamus exercitationem enim commodi quo? Minus veritatis tempore, quod sed nihil, cumque
+        maiores earum molestias molestiae, ex eligendi aliquam!
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione ex itaque vitae fugiat, aspernatur
+            molestiae ducimus. Cumque hic eos aut dolorem maiores quaerat ipsum ducimus blanditiis? Enim omnis
+            veritatis, neque nostrum nesciunt unde dolor nulla deleniti, architecto vero alias tempore fugit quae nihil.
+        </div>
+    </div>
+</body>
+
+</html>
